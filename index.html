@@ -97,6 +97,24 @@
                         <option value="other"> Other</option>
                     </select>
 
+                    <div class="formRow">
+
+                        <label for="dish">What's your favorite dish?</label>
+                        <input type="text" id="dish" name="favDish" list="dishType" />
+                        <datalist id="dishType">
+                            <option value="Anitpasto pizza "></option>
+                            <option value="Big Kahuna pizza "></option>
+                            <option value="BBQ Chicken pizza "></option>
+                            <option value="Mediterranean Herb pizza "></option>
+                            <option value="Pasta rolls "></option>
+                            <option value="Pasta Artichoke pizza "></option>
+                        </datalist>
+                    </div>
+
+
+
+
+
                 </div>
                 <label for="dimeSpin">How many times do you dine out per month.</label>
                 <input name="dineOut" type="number" id="dineOut" value="1" step="1" min="0" max="20">
@@ -121,6 +139,7 @@
                         <option value="order4">Take n' bake</option>
                     </select>
                 </div>
+
                 <div class="formRow">
                     <label>Was your service friendly?</label>
                     <fieldset class="optGroup">
@@ -149,30 +168,21 @@
                     </fieldset>
                 </div>
 
-                <label for="commBox"> Tell us more about your experiene!</label>
-                <textarea name="custExp" id="commBox"></textarea>
-                <div class="formRow">
-
-                </div>
                 <div class="formRow">
                     <label for="rangeBox">Rate he overall service <br /> (0=poor; 10=great)</label>
                     0
                     <input type="range" id="rangeBox" name="serviceRate" value="5" step"1" min="0" max="10" />
                     10
                 </div>
+
+
+
+                <label for="commBox"> Tell us more about your experiene!</label>
+                <textarea name="custExp" id="commBox"></textarea>
                 <div class="formRow">
 
-                    <label for="dish">What's your favorite dish?</label>
-                    <input type="text" id="dish" name="favDish" list="dishType" />
-                    <datalist id="dishType">
-                        <option value="Anitpasto pizza "></option>
-                        <option value="Big Kahuna pizza "></option>
-                        <option value="BBQ Chicken pizza "></option>
-                        <option value="Mediterranean Herb pizza "></option>
-                        <option value="Pasta rolls "></option>
-                        <option value="Pasta Artichoke pizza "></option>
-                    </datalist>
                 </div>
+
                 <div id="buttons">
                     <input type="submit" value="Submit My Survey" />
                     <input type="reset" value="Canel" />
